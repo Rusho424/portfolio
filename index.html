@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal portfolio of Rusho — security-minded developer building toward a career as a security architect.">
   <title>Rusho | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
   <header class="nav">
     <div class="nav-inner">
-      <a href="#top" class="logo">&gt;_Rusho</a>
+      <a href="#top" class="logo">RUSHO<span class="logo-dot">.</span></a>
       <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
       <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -27,34 +27,44 @@
 
   <main id="top">
     <section class="hero">
-      <p class="hero-greeting">Hi, my name is</p>
-      <h1 class="hero-name">Rusho.</h1>
+      <p class="hero-greeting">Hi, I'm</p>
+      <div class="hero-name-wrap">
+        <h1 class="hero-name">Rusho</h1>
+        <svg class="scribble" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M4 8 Q20 2 40 9 T80 9 T120 8 T160 9 T200 8 T240 9 T296 6" fill="none" stroke="#171a2e" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
       <h2 class="hero-tagline">I'm into AI, cybersecurity, self-hosting, and Linux.</h2>
-      <p class="hero-blurb">Security-minded developer fueled by a passion for AI. I run my own network homelab, host servers for me and my friends, and I'm building my way toward a career as a security architect.</p>
+      <p class="hero-blurb">Security-minded developer fueled by a passion for AI. I run my own <span class="hilite">network homelab</span>, host servers for me and my friends, and I'm building my way toward a career as a security architect.</p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#projects" class="btn btn-primary">View my work
+          <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 5v14M6 13l6 6 6-6"/>
+          </svg>
+        </a>
         <a href="#contact" class="btn btn-outline">Get in touch</a>
       </div>
     </section>
 
     <section class="section about" id="about">
       <div class="container">
-        <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+        <div class="section-head">
+          <h2 class="section-title"><span class="hilite">About</span></h2>
+          <span class="section-anno">field note · 01</span>
+        </div>
         <div class="about-grid">
           <div>
             <p>Hello! I'm Rusho — a security-minded developer with a deep passion for AI and how it actually works. I'm on a mission to build a career as a security architect, and every project I take on is a step in that direction.</p>
             <p>I've worked hands-on with Docker and large language models, I'm comfortable hopping between Linux distros, and at home I run my own network lab where I host servers for myself and my friends to tinker, experiment, and play.</p>
             <ul class="about-points">
-              <li>&#8594; Passionate about AI and security</li>
-              <li>&#8594; Docker, LLMs &amp; Linux daily driver</li>
-              <li>&#8594; Homelab &amp; self-hosting enthusiast</li>
+              <li>Passionate about AI and security</li>
+              <li>Docker, LLMs &amp; Linux daily driver</li>
+              <li>Homelab &amp; self-hosting enthusiast</li>
             </ul>
           </div>
           <div class="about-card">
-            <div class="about-photo">
-              <span>R</span>
-            </div>
-            <p class="about-status"><span class="status-dot"></span> Available for new projects</p>
+            <div class="about-badge">R</div>
+            <p class="sticker">open to collaborate</p>
           </div>
         </div>
       </div>
@@ -62,51 +72,57 @@
 
     <section class="section skills" id="skills">
       <div class="container">
-        <h2 class="section-title"><span class="section-num">02.</span> My Skills</h2>
-        <div class="skills-grid">
-          <div class="card">
+        <div class="section-head">
+          <h2 class="section-title"><span class="hilite">What I work with</span></h2>
+          <span class="section-anno">scribblings · 02</span>
+        </div>
+        <ul class="notes">
+          <li class="note paper">
             <h3>AI &amp; LLMs</h3>
             <p>Working hands-on with large language models and exploring how AI makes security smarter.</p>
-          </div>
-          <div class="card">
+          </li>
+          <li class="note paper">
             <h3>Docker &amp; Linux</h3>
             <p>Containerizing apps and hopping between distros with ease. Linux is my daily driver.</p>
-          </div>
-          <div class="card">
+          </li>
+          <li class="note paper">
             <h3>Homelab &amp; Self-Hosting</h3>
             <p>Running my own network lab and hosting servers for me and my friends to enjoy.</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="section projects" id="projects">
       <div class="container">
-        <h2 class="section-title"><span class="section-num">03.</span> Things I've Built</h2>
-        <div class="projects-grid">
-          <article class="card">
+        <div class="section-head">
+          <h2 class="section-title"><span class="hilite">Things I've built</span></h2>
+          <span class="section-anno">the archive · 03</span>
+        </div>
+        <div class="archive">
+          <article class="row paper">
             <h3>Your Project Title</h3>
             <p>A short description of an AI or LLM project you've worked on. Replace this with your own work.</p>
-            <div class="project-tags">
+            <div class="row-tags">
               <span>AI</span><span>LLM</span><span>Python</span>
             </div>
-            <a href="#" class="project-link">Learn more &#8599;</a>
+            <a href="#" class="row-link">Learn more &#8599;</a>
           </article>
-          <article class="card">
+          <article class="row paper">
             <h3>Your Project Title</h3>
             <p>A short description of a Docker or self-hosted service you run in your homelab. Replace this with your own work.</p>
-            <div class="project-tags">
+            <div class="row-tags">
               <span>Docker</span><span>Self-Hosted</span>
             </div>
-            <a href="#" class="project-link">Learn more &#8599;</a>
+            <a href="#" class="row-link">Learn more &#8599;</a>
           </article>
-          <article class="card">
+          <article class="row paper">
             <h3>Your Project Title</h3>
             <p>A short description of a homelab or Linux setup you're proud of. Replace this with your own work.</p>
-            <div class="project-tags">
+            <div class="row-tags">
               <span>Linux</span><span>Homelab</span>
             </div>
-            <a href="#" class="project-link">Learn more &#8599;</a>
+            <a href="#" class="row-link">Learn more &#8599;</a>
           </article>
         </div>
       </div>
@@ -114,7 +130,10 @@
 
     <section class="section contact" id="contact">
       <div class="container">
-        <h2 class="section-title"><span class="section-num">04.</span> Get In Touch</h2>
+        <div class="section-head">
+          <h2 class="section-title"><span class="hilite">Get in touch</span></h2>
+          <span class="section-anno">the final note · 04</span>
+        </div>
         <p class="contact-blurb">Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
         <a href="mailto:your.email@example.com" class="btn btn-primary">Say hello</a>
         <div class="contact-socials">
@@ -127,7 +146,10 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2026 Rusho. Built with &hearts; and lots of coffee.</p>
+    <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2l2.4 6.2L21 8.3l-5 4.4 1.5 6.1L12 15.6l-5.5 3.2L8 12.7 3 8.3l6.6-.1z"/>
+    </svg>
+    <p>&copy; 2026 Rusho. Handmade with push pins and black ink.</p>
   </footer>
 
 </body>
