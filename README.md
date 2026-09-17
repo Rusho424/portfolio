@@ -1,8 +1,8 @@
 # Rusho — Personal Portfolio
 
-Hello! I'm **Rusho** — a security-minded developer with a deep passion for AI and how it actually works. I'm on a mission to build a career as a **security architect**.
+I'm **Rusho**. I like AI, I run a **homelab**, and I host servers for friends. Working toward a career as a **security architect**.
 
-I've worked hands-on with **Docker** and **large language models**, I'm comfortable hopping between **Linux distros**, and at home I run my own **network homelab** where I host servers for myself and my friends to tinker, experiment, and play.
+Daily stuff: **Docker**, **LLMs**, **Linux**.
 
 ## The Site
 
