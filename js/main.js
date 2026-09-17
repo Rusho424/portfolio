@@ -1,5 +1,5 @@
 const typedElement = document.getElementById("typed");
-const typerWords = ["web.", "solve problems.", "help people.", "learn."];
+const typerWords = ["AI.", "cybersecurity.", "self-hosting.", "Linux."];
 
 let wordIndex = 0;
 let charIndex = 0;

@@ -4,10 +4,10 @@
   --bg-card: #1b2040;
   --text: #e6e9f5;
   --text-dim: #9aa0bf;
-  --accent: #6c5ce7;
-  --accent-2: #00cec9;
+  --accent: #ffd60a;
+  --accent-2: #ff9f1c;
   --border: #2a2f52;
-  --gradient: linear-gradient(135deg, #6c5ce7, #00cec9);
+  --gradient: linear-gradient(135deg, #ffd60a, #ff9f1c);
   --font-body: "Inter", system-ui, sans-serif;
   --font-mono: "Fira Code", monospace;
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
@@ -20,9 +20,10 @@
   --bg-card: #ffffff;
   --text: #1f2340;
   --text-dim: #5a6080;
-  --accent: #6c5ce7;
-  --accent-2: #00b8b5;
+  --accent: #c48a00;
+  --accent-2: #d97706;
   --border: #e2e5f0;
+  --gradient: linear-gradient(135deg, #c48a00, #d97706);
   --shadow: 0 10px 40px rgba(30, 30, 70, 0.12);
 }
 
@@ -169,7 +170,7 @@ a {
   right: -20%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(108, 92, 231, 0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 214, 10, 0.22), transparent 70%);
   pointer-events: none;
 }
 
@@ -180,7 +181,7 @@ a {
   left: -10%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(0, 206, 201, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 159, 28, 0.16), transparent 70%);
   pointer-events: none;
 }
 
@@ -256,12 +257,12 @@ a {
 
 .btn-primary {
   background: var(--gradient);
-  color: #fff;
+  color: #171a2e;
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(108, 92, 231, 0.35);
+  box-shadow: 0 12px 30px rgba(255, 214, 10, 0.3);
 }
 
 .btn-outline {
@@ -270,7 +271,7 @@ a {
 }
 
 .btn-outline:hover {
-  background: rgba(108, 92, 231, 0.12);
+  background: rgba(255, 214, 10, 0.12);
   transform: translateY(-3px);
 }
 

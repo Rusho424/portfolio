@@ -1,6 +1,10 @@
-# Personal Portfolio
+# Rusho — Personal Portfolio
 
-A clean, responsive portfolio website built with plain HTML, CSS, and JavaScript — no frameworks, no build tools.
+Hello! I'm **Rusho** — a security-minded developer with a deep passion for AI and how it actually works. I'm on a mission to build a career as a **security architect**.
+
+I've worked hands-on with **Docker** and **large language models**, I'm comfortable hopping between **Linux distros**, and at home I run my own **network homelab** where I host servers for myself and my friends to tinker, experiment, and play.
+
+This is my personal portfolio — a clean, responsive site built with plain HTML, CSS, and JavaScript. No frameworks, no build tools.
 
 ## Sections
 
