@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Rusho — builder, tinkerer, lifelong learner.">
+  <title>Rusho | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">&gt;_Rusho</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+            <span class="theme-icon-light">&#9789;</span>
+            <span class="theme-icon-dark">&#9788;</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="hero-greeting">Hi, my name is</p>
+        <h1 class="hero-name">Rusho.</h1>
+        <h2 class="hero-tagline">I build things for the <span class="typed" id="typed"></span></h2>
+        <p class="hero-blurb">I'm a developer who loves turning ideas into clean, functional web experiences. Welcome to my corner of the internet.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Hello! I'm Rusho, a curious developer based in the world of ones and zeros. I enjoy creating things that live on the internet — from sleek websites to useful little tools that solve everyday problems.</p>
+            <p>When I'm not coding, you'll probably find me learning something new, experimenting with side projects, or leveling up my skills. This portfolio is my digital garden — it'll grow as I do.</p>
+            <ul class="about-points">
+              <li>&#8594; Self-taught, always learning</li>
+              <li>&#8594; Web development enthusiast</li>
+              <li>&#8594; Obsessed with clean, simple design</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <div class="about-photo">
+              <span>R</span>
+            </div>
+            <p class="about-status"><span class="status-dot"></span> Available for new projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">02.</span> My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">&#60;&#47;&#62;</div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript and building responsive, accessible interfaces.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">&#128421;</div>
+            <h3>Terminal &amp; Git</h3>
+            <p>Comfortable working in the command line, version control, and automation.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">&#128161;</div>
+            <h3>Problem Solving</h3>
+            <p>Breaking down complex problems and finding simple, elegant solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">03.</span> Things I've Built</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-folder">&#128193;</div>
+            <h3>Project Name</h3>
+            <p>A short description of what this project does and why you built it. Replace me with your own work.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <a href="#" class="project-link">Learn more &#8599;</a>
+          </article>
+          <article class="project-card">
+            <div class="project-folder">&#128193;</div>
+            <h3>Project Name</h3>
+            <p>A short description of what this project does and why you built it. Replace me with your own work.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Git</span>
+            </div>
+            <a href="#" class="project-link">Learn more &#8599;</a>
+          </article>
+          <article class="project-card">
+            <div class="project-folder">&#128193;</div>
+            <h3>Project Name</h3>
+            <p>A short description of what this project does and why you built it. Replace me with your own work.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>API</span>
+            </div>
+            <a href="#" class="project-link">Learn more &#8599;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">04.</span> Get In Touch</h2>
+        <p class="contact-blurb">Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
+        <a href="mailto:your.email@example.com" class="btn btn-primary">Say hello</a>
+        <div class="contact-socials">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Rusho. Built with &hearts; and lots of coffee.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
