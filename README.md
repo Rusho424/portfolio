@@ -6,7 +6,7 @@ Daily stuff: **Docker**, **LLMs**, **Linux**.
 
 ## The Site
 
-A single yellow-themed page built with plain HTML and CSS. Zero JavaScript, zero frameworks, zero external dependencies.
+A book-style page — cream paper, serif type, chapters. Built with plain HTML and CSS. Zero JavaScript, zero frameworks, zero external dependencies.
 
 - **Hero** — name, tagline, quick blurb
 - **About** — the story above
