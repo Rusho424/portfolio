@@ -1,11 +1,12 @@
 :root {
-  --page: #f6f5f1;
-  --page-soft: #ecebe4;
-  --page-card: #fcfbf8;
-  --ink: #2e2b26;
-  --ink-dim: #6d6a63;
-  --mark: #9c3b2e;
-  --line: #d9d6cc;
+  --page: #ece8de;
+  --page-soft: #e0dbcd;
+  --page-card: #f3efe7;
+  --ink: #33291f;
+  --ink-dim: #77684f;
+  --mark: #8a3b2c;
+  --line: #c9c0ab;
+  --grime: rgba(70, 50, 25, 0.18);
   --font-serif: Georgia, "Times New Roman", "Book Antiqua", serif;
   --font-mono: ui-monospace, "Cascadia Code", "Consolas", monospace;
 }
@@ -26,6 +27,36 @@ body {
   background-image: radial-gradient(circle at 50% -10%, rgba(80, 78, 72, 0.05), transparent 55%);
   color: var(--ink);
   line-height: 1.75;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+      90deg,
+      rgba(70, 50, 25, 0.12) 0,
+      rgba(70, 50, 25, 0.05) 1.5%,
+      transparent 7%,
+      transparent 93%,
+      rgba(70, 50, 25, 0.1) 98.5%,
+      rgba(70, 50, 25, 0.14) 100%
+    ),
+    radial-gradient(ellipse at 50% 0%, rgba(90, 70, 35, 0.08), transparent 55%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    linear-gradient(104deg, transparent 0 118px, rgba(80, 58, 30, 0.25) 118px 119px, transparent 119px 420px, rgba(80, 58, 30, 0.12) 640px 641px, transparent 641px),
+    linear-gradient(12deg, transparent 0 310px, rgba(80, 58, 30, 0.18) 310px 311px, transparent 311px);
 }
 
 a {
@@ -184,14 +215,20 @@ a {
   left: 0;
   right: 0;
   height: 100%;
-  background: var(--jag);
+  background:
+    linear-gradient(0deg, var(--grime), transparent 7px),
+    var(--jag);
   pointer-events: none;
   -webkit-mask:
-    linear-gradient(135deg, #000 50%, transparent 50%) 0 100% / 18px 16px repeat-x,
-    linear-gradient(45deg, transparent 50%, #000 50%) 0 100% / 18px 16px repeat-x;
+    linear-gradient(135deg, #000 50%, transparent 50%) 0 0 / 22px 20px repeat-x,
+    linear-gradient(45deg, transparent 50%, #000 50%) 0 0 / 22px 20px repeat-x,
+    linear-gradient(45deg, #000 50%, transparent 50%) 0 100% / 22px 20px repeat-x,
+    linear-gradient(135deg, transparent 50%, #000 50%) 0 100% / 22px 20px repeat-x;
   mask:
-    linear-gradient(135deg, #000 50%, transparent 50%) 0 100% / 18px 16px repeat-x,
-    linear-gradient(45deg, transparent 50%, #000 50%) 0 100% / 18px 16px repeat-x;
+    linear-gradient(135deg, #000 50%, transparent 50%) 0 0 / 22px 20px repeat-x,
+    linear-gradient(45deg, transparent 50%, #000 50%) 0 0 / 22px 20px repeat-x,
+    linear-gradient(45deg, #000 50%, transparent 50%) 0 100% / 22px 20px repeat-x,
+    linear-gradient(135deg, transparent 50%, #000 50%) 0 100% / 22px 20px repeat-x;
 }
 
 .hero.jag {
@@ -325,7 +362,8 @@ a {
   width: 170px;
   height: 170px;
   border: 2px solid var(--ink);
-  border-radius: 50%;
+  border-radius: 0;
+  clip-path: polygon(0 0, 84% 0, 88% 4%, 100% 10%, 98% 96%, 94% 100%, 12% 99%, 5% 94%, 0 88%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -399,6 +437,37 @@ a {
 
 .projects {
   background: var(--page-soft);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 70px),
+    97% calc(100% - 40px),
+    96% 100%,
+    60% 97%,
+    8% 100%,
+    0 96%,
+    0 12%,
+    3% 4%
+  );
+}
+
+.skills {
+  clip-path: polygon(
+    0 3%,
+    2% 0,
+    6% 2%,
+    10% 0,
+    96% 1%,
+    99% 3%,
+    100% 6%,
+    99% 95%,
+    97% 100%,
+    90% 98%,
+    50% 97%,
+    9% 99%,
+    3% 97%,
+    0 92%
+  );
 }
 
 .toc {
