@@ -4,39 +4,25 @@ Hello! I'm **Rusho** — a security-minded developer with a deep passion for AI 
 
 I've worked hands-on with **Docker** and **large language models**, I'm comfortable hopping between **Linux distros**, and at home I run my own **network homelab** where I host servers for myself and my friends to tinker, experiment, and play.
 
-This is my personal portfolio — a clean, responsive site built with plain HTML, CSS, and JavaScript. No frameworks, no build tools.
+## The Site
 
-## Sections
+A single yellow-themed page built with plain HTML and CSS. Zero JavaScript, zero frameworks, zero external dependencies.
 
-- **Hero** — animated typing tagline, gradient accents
-- **About** — a short intro and "currently available" status
-- **Skills** — at-a-glance skills cards
-- **Projects** — placeholder cards you can replace with your own work
+- **Hero** — name, tagline, quick blurb
+- **About** — the story above
+- **Skills** — AI/LLMs, Docker & Linux, homelab & self-hosting
+- **Projects** — placeholder cards waiting for your real work
 - **Contact** — email CTA + social links
-
-## Features
-
-- Responsive layout (mobile nav with hamburger menu)
-- Light / dark theme toggle (remembers your choice)
-- Smooth scrolling and scroll-reveal animations
-- Scroll-spy navigation highlighting
 
 ## Getting Started
 
-Open `index.html` in any browser — that's it. Or serve locally:
-
-```bash
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
+Open `index.html` in any browser — that's it.
 
 ## Customizing
 
-1. **Name / intro** — edit the hero and about sections in `index.html`
-2. **Projects** — replace the placeholder cards in `#projects`
-3. **Social links / email** — update `#contact` links and `mailto:` address
-4. **Colors** — tweak the CSS variables at the top of `css/style.css`
+1. **Text** — edit the sections in `index.html`
+2. **Email / socials** — update the `#contact` links and `mailto:` address
+3. **Colors** — tweak the variables at the top of `css/style.css`
 
 ## License
 
