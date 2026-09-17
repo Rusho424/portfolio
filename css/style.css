@@ -15,14 +15,14 @@
 }
 
 [data-theme="light"] {
-  --bg: #fffbea;
-  --bg-soft: #fff3cc;
+  --bg: #fff7cc;
+  --bg-soft: #ffed8a;
   --bg-card: #ffffff;
   --text: #1f2340;
   --text-dim: #6b5c00;
   --accent: #d9480f;
   --accent-2: #b45309;
-  --border: #f0e0a8;
+  --border: #f0d94f;
   --gradient: linear-gradient(135deg, #d9480f, #b45309);
   --shadow: 0 10px 40px rgba(190, 140, 0, 0.25);
 }
