@@ -7,3 +7,6 @@ Thumbs.db
 .vscode/
 .idea/
 .env
+
+# stand-alone sub-project repos
+scientific-calculator/
